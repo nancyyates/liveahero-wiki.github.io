@@ -1,0 +1,316 @@
+<!DOCTYPE html> <html> <head> <title>Items - Live A Hero Wiki</title> <meta charset="utf-8"> <meta name="viewport" content="width=device-width,minimum-scale=1.0"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="theme-color" content="#ffa726"> <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.ico"> <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap"> <link rel="stylesheet" type="text/css" href="/assets/main.css"> <link rel="canonical" href="https://liveahero-wiki.github.io/items/"> </head> <body> <div class="sidebar"> <header class="sidebar__logo" role="banner"> <img src="/assets/img/logo.png"> </header> <nav class="sidebar__nav"> <div class="sidebar__nav-interior"> <h3 class="section__header">Wiki</h3> <ul> <li> <a href="/">Main page</a> </li> <li> <a href="https://github.com/liveahero-wiki/liveahero-wiki.github.io/commits/master">Recent changes</a> </li> <li> <a href="https://github.com/liveahero-wiki/liveahero-wiki.github.io/">Open source</a> </li> <li> <a href="/faq/">FAQ</a> </li> </ul> <h3 class="section__header">Catalogs</h3> <ul> <li> <a href="/events/">Events</a> </li> <li> <a href="/charas/#heroes">Heroes</a> </li> <li> <a href="/charas/#sidekicks">Sidekicks</a> </li> <li> <a href="/charas/#unreleased">Unreleased units</a> </li> <li> <a href="/mobs/">Mobs and Enemies</a> </li> <li> <a href="/affiliations/">Affiliations</a> </li> <li> <a href="/illustrators/">Illustrators</a> </li> <li> <a href="/voice_actors/">Voice Actors</a> </li> <li> <a href="/main_quests/">Main Quests</a> </li> <li> <a href="/chara_quests/">Character Quests</a> </li> <li> <a href="/misc/">More...</a> </li> </ul> <h3 class="section__header">Basic Information</h3> <ul> <li> <a href="/guide/">Getting Started</a> </li> <li> <a href="/guide/hero/">Hero</a> </li> <li> <a href="/guide/sidekick/">Sidekick</a> </li> <li> <a href="/guide/gacha/">Gacha</a> </li> <li> <a href="/guide/user_rank/">Stamina and User Rank</a> </li> <li> <a href="/guide/battle/">Battle</a> </li> <li> <a href="/guide/quest/">Quest</a> </li> <li> <a href="/guide/quest_scenario/">Quest Scenario</a> </li> <li> <a href="/guide/challenge_simulator/">Challenge Simulator</a> </li> <li> <a href="/guide/shop/">Shop</a> </li> <li> <a href="/guide/login_bonus/">Login Bonus</a> </li> <li> <a href="/guide/mission/">Mission</a> </li> <li> <a href="/guide/sale/">Sale</a> </li> <li> <a href="/guide/training/">Training</a> </li> <li> <a href="/guide/parallel_weapon/">Parallel Weapon Remodelling</a> </li> <li> <a href="/guide/skill_manual/">Skill Manual</a> </li> <li> <a href="/guide/engraving_enhancement/">Engraving Enhancement</a> </li> <li> <a href="/guide/office/">Office</a> </li> </ul> <h3 class="section__header">Tools</h3> <ul> <li> <a href="https://github.com/liveahero-wiki/liveahero-wiki.github.io/upload/master/assets/img">Upload image</a> </li> </ul> <h3 class="section__header">Contributing</h3> <ul> <li> <a href="/contributing/">How to contribute</a> </li> <li> <a href="/contributing/writing/">Writing Guide</a> </li> <li> <a href="/contributing/programming/">Programming Guide</a> </li> </ul> </div> </nav> </div> <div class="content__overlay"></div> <main class="content__area"> <div class="content"> <aside class="wiki-msg"> <img class="emoji" title=":date:" alt=":date:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4c5.png" height="20" width="20"> <a href="https://docs.google.com/forms/d/e/1FAIpQLSeTrC1NxFb5Y4x7cR3grUz0diLAFDBSNhFa87deoU23F1km2Q/viewform?usp=sf_link">LAH Wiki Survey (2022 edition)</a> is opened, please spend some time to fill it! </aside> <aside class="clearfix"> <button class="menu-button"> <span aria-hidden="true"><svg height="16" viewbox="0 0 12 16" width="12" xmlns="http://www.w3.org/2000/svg"><path d="m11.41 9h-10.82c-.59 0-.59-.41-.59-1s0-1 .59-1h10.81c.59 0 .59.41.59 1s0 1-.59 1zm0-4h-10.82c-.59 0-.59-.41-.59-1s0-1 .59-1h10.81c.59 0 .59.41.59 1s0 1-.59 1zm-10.82 6h10.81c.59 0 .59.41.59 1s0 1-.59 1h-10.81c-.59 0-.59-.41-.59-1s0-1 .59-1z"></path></svg></span> <span>Menu</span> </button> <a class="github-button" href="https://github.com/liveahero-wiki/liveahero-wiki.github.io/edit/master/items.html">Edit this page</a> </aside> <div class="page-header"> <h1><a href="/items/">Items</a></h1> </div> <p>To add item when writing Wiki page, write <code>{% include item.html id=number %}</code>.</p> <p>Example: <code>{% include item.html id=1 %}</code> will becomes <span class="item" title="様々な役割を果たす綺麗な晶石。"><img src="/cdn/Sprite/item_stone01.png" loading="lazy"> エーテル晶石</span> when rendered.</p> <p>Example: <code>{% include item-icon.html id=42 %}</code> will becomes <span class="item" title="フレンドガチャを回すのに必要なポイント。"><img src="/cdn/Sprite/item_friendpoint.png" loading="lazy"></span> when rendered.</p> <table> <tr>
+<th>ID</th>
+<th>Item</th>
+</tr> <tr>
+<td>1</td>
+<td><span class="item" title="様々な役割を果たす綺麗な晶石。"><img src="/cdn/Sprite/item_stone01.png" loading="lazy"> エーテル晶石</span></td>
+</tr> <tr>
+<td>2</td>
+<td><span class="item" title="様々な役割を果たす綺麗な晶石。（無償）"><img src="/cdn/Sprite/item_stone01.png" loading="lazy"> エーテル晶石</span></td>
+</tr> <tr>
+<td>10</td>
+<td><span class="item" title="エーテルサーチを１回行うことができるチケット"><img src="/cdn/Sprite/item_stone_ticket.png" loading="lazy"> エーテルチケット</span></td>
+</tr> <tr>
+<td>11</td>
+<td><span class="item" title="ヒーローが経験を積むために使われるアイテム"><img src="/cdn/Sprite/item_exp.png" loading="lazy"> EXPアイテム</span></td>
+</tr> <tr>
+<td>12</td>
+<td><span class="item" title="火属性のヒーローのランクアップに必要なアイテム"><img src="/cdn/Sprite/item_rank4_fire.png" loading="lazy"> 火の小覚醒石</span></td>
+</tr> <tr>
+<td>13</td>
+<td><span class="item" title="火属性のヒーローのランクアップに必要なアイテム"><img src="/cdn/Sprite/item_rank5_fire.png" loading="lazy"> 火の中覚醒石</span></td>
+</tr> <tr>
+<td>14</td>
+<td><span class="item" title="火属性のヒーローのランクアップに必要なアイテム"><img src="/cdn/Sprite/item_rank6_fire.png" loading="lazy"> 火の大覚醒石</span></td>
+</tr> <tr>
+<td>15</td>
+<td><span class="item" title="水属性のヒーローのランクアップに必要なアイテム"><img src="/cdn/Sprite/item_rank4_water.png" loading="lazy"> 水の小覚醒石</span></td>
+</tr> <tr>
+<td>16</td>
+<td><span class="item" title="水属性のヒーローのランクアップに必要なアイテム"><img src="/cdn/Sprite/item_rank5_water.png" loading="lazy"> 水の中覚醒石</span></td>
+</tr> <tr>
+<td>17</td>
+<td><span class="item" title="水属性のヒーローのランクアップに必要なアイテム"><img src="/cdn/Sprite/item_rank6_water.png" loading="lazy"> 水の大覚醒石</span></td>
+</tr> <tr>
+<td>18</td>
+<td><span class="item" title="木属性のヒーローのランクアップに必要なアイテム"><img src="/cdn/Sprite/item_rank4_earth.png" loading="lazy"> 木の小覚醒石</span></td>
+</tr> <tr>
+<td>19</td>
+<td><span class="item" title="木属性のヒーローのランクアップに必要なアイテム"><img src="/cdn/Sprite/item_rank5_earth.png" loading="lazy"> 木の中覚醒石</span></td>
+</tr> <tr>
+<td>20</td>
+<td><span class="item" title="木属性のヒーローのランクアップに必要なアイテム"><img src="/cdn/Sprite/item_rank6_earth.png" loading="lazy"> 木の大覚醒石</span></td>
+</tr> <tr>
+<td>21</td>
+<td><span class="item" title="光属性のヒーローのランクアップに必要なアイテム"><img src="/cdn/Sprite/item_rank4_light.png" loading="lazy"> 光の小覚醒石</span></td>
+</tr> <tr>
+<td>22</td>
+<td><span class="item" title="光属性のヒーローのランクアップに必要なアイテム"><img src="/cdn/Sprite/item_rank5_light.png" loading="lazy"> 光の中覚醒石</span></td>
+</tr> <tr>
+<td>23</td>
+<td><span class="item" title="光属性のヒーローのランクアップに必要なアイテム"><img src="/cdn/Sprite/item_rank6_light.png" loading="lazy"> 光の大覚醒石</span></td>
+</tr> <tr>
+<td>24</td>
+<td><span class="item" title="影属性のヒーローのランクアップに必要なアイテム"><img src="/cdn/Sprite/item_rank4_shadow.png" loading="lazy"> 影の小覚醒石</span></td>
+</tr> <tr>
+<td>25</td>
+<td><span class="item" title="影属性のヒーローのランクアップに必要なアイテム"><img src="/cdn/Sprite/item_rank5_shadow.png" loading="lazy"> 影の中覚醒石</span></td>
+</tr> <tr>
+<td>26</td>
+<td><span class="item" title="影属性のヒーローのランクアップに必要なアイテム"><img src="/cdn/Sprite/item_rank6_shadow.png" loading="lazy"> 影の大覚醒石</span></td>
+</tr> <tr>
+<td>27</td>
+<td><span class="item" title="特定のヒーローのランクアップに必要なアイテム"><img src="/cdn/Sprite/item_rank4_common.png" loading="lazy"> シルバーメダル</span></td>
+</tr> <tr>
+<td>28</td>
+<td><span class="item" title="特定のヒーローのランクアップに必要なアイテム"><img src="/cdn/Sprite/item_rank5_common.png" loading="lazy"> ゴールドメダル</span></td>
+</tr> <tr>
+<td>29</td>
+<td><span class="item" title="特定のヒーローのランクアップに必要なアイテム"><img src="/cdn/Sprite/item_rank6_common.png" loading="lazy"> レジェンドメダル</span></td>
+</tr> <tr>
+<td>30</td>
+<td><span class="item" title="２人の絆を高めるアイテム"><img src="/cdn/Sprite/item_trainingband.png" loading="lazy"> トレーニングバンド</span></td>
+</tr> <tr>
+<td>31</td>
+<td><span class="item" title="使用すると営業時間を10分短縮できるチケット"><img src="/cdn/Sprite/item_salesticket_01.png" loading="lazy"> ブロンズ直帰チケット</span></td>
+</tr> <tr>
+<td>32</td>
+<td><span class="item" title="使用すると営業時間を30分短縮できるチケット"><img src="/cdn/Sprite/item_salesticket_02.png" loading="lazy"> シルバー直帰チケット</span></td>
+</tr> <tr>
+<td>33</td>
+<td><span class="item" title="使用すると営業時間を60分短縮できるチケット"><img src="/cdn/Sprite/item_salesticket_03.png" loading="lazy"> ゴールド直帰チケット</span></td>
+</tr> <tr>
+<td>34</td>
+<td><span class="item" title="スタミナを50回復するアイテム"><img src="/cdn/Sprite/item_staminadrink.png" loading="lazy"> スタミナドリンク</span></td>
+</tr> <tr>
+<td>35</td>
+<td><span class="item" title="宇宙統一通貨。ショップで商品と交換できる。"><img src="/cdn/Sprite/item_lah.png" loading="lazy"> ラフ</span></td>
+</tr> <tr>
+<td>38</td>
+<td><span class="item" title="特定のクエストに出撃するために必要なチケット。３枚まで所持できる。"><img src="/cdn/Sprite/item_questticket_01.png" loading="lazy"> クエストチケット</span></td>
+</tr> <tr>
+<td>39</td>
+<td><span class="item" title="☆３サイドキックを1段階ランクアップできる不思議な結晶。"><img src="/cdn/Sprite/item_genericheart_rank3.png" loading="lazy"> ☆３サイドキックの心</span></td>
+</tr> <tr>
+<td>40</td>
+<td><span class="item" title="記憶や記録が封じられているキューブ。ショップで商品と交換できる。"><img src="/cdn/Sprite/item_recordcube.png" loading="lazy"> レコードキューブ</span></td>
+</tr> <tr>
+<td>42</td>
+<td><span class="item" title="フレンドガチャを回すのに必要なポイント。"><img src="/cdn/Sprite/item_friendpoint.png" loading="lazy"> フレンドポイント</span></td>
+</tr> <tr>
+<td>43</td>
+<td><span class="item" title="排出時ランク３のヒーローのファン数を増やすことができる不思議な結晶。"><img src="/cdn/Sprite/item_genericpiece_rank3.png" loading="lazy"> ☆３ヒーローの記憶片</span></td>
+</tr> <tr>
+<td>44</td>
+<td><span class="item" title="排出時ランク４のヒーローのファン数を増やすことができる不思議な結晶。"><img src="/cdn/Sprite/item_genericpiece_rank4.png" loading="lazy"> ☆４ヒーローの記憶片</span></td>
+</tr> <tr>
+<td>45</td>
+<td><span class="item" title="排出時ランク５のヒーローのファン数を増やすことができる不思議な結晶。"><img src="/cdn/Sprite/item_genericpiece_rank5.png" loading="lazy"> ☆５ヒーローの記憶片</span></td>
+</tr> <tr>
+<td>46</td>
+<td><span class="item" title="☆4サイドキックを1段階ランクアップできる不思議な結晶。"><img src="/cdn/Sprite/item_genericheart_rank4.png" loading="lazy"> ☆４サイドキックの心</span></td>
+</tr> <tr>
+<td>47</td>
+<td><span class="item" title="営業枠を増やすのに必要なチケット&lt;br&gt;エーテル晶石（有償）でのみ購入できます。"><img src="/cdn/Sprite/item_salescapacity_ticket.png" loading="lazy"> 営業枠拡張チケット</span></td>
+</tr> <tr>
+<td>48</td>
+<td><span class="item" title="捜査内容が書かれた極秘資料。交換所でアイテムと交換してもらえる。"><img src="/cdn/Sprite/item_2010akatsuki_exchange01.png" loading="lazy"> 捜査資料</span></td>
+</tr> <tr>
+<td>49</td>
+<td><span class="item" title="謎を探して見つけた手がかり。交換所でアイテムと交換してもらえる。"><img src="/cdn/Sprite/item_2010akatsuki_exchange02.png" loading="lazy"> 謎の痕跡</span></td>
+</tr> <tr>
+<td>50</td>
+<td><span class="item" title="クリスマスを祝う飾り。交換所でアイテムと交換してもらえる。"><img src="/cdn/Sprite/item_Xmas2012_exchange.png" loading="lazy"> クリスマスオーナメント</span></td>
+</tr> <tr>
+<td>51</td>
+<td><span class="item" title="謹賀新年2021！エーテル・サーチを行うことができるチケット"><img src="/cdn/Sprite/item_special_stone_ticket.png" loading="lazy"> スペシャルエーテルチケット</span></td>
+</tr> <tr>
+<td>52</td>
+<td><span class="item" title="功績を称える章飾。交換所でアイテムと交換してもらえる。"><img src="/cdn/Sprite/item_ContractWolfmanEarth2101_exchange01.png" loading="lazy"> 勲章</span></td>
+</tr> <tr>
+<td>53</td>
+<td><span class="item" title="ヒーローとして認められた功績。特定のヒーローのランクアップに必要なアイテム"><img src="/cdn/Sprite/item_rank_hero_token.png" loading="lazy"> ヒーローの証</span></td>
+</tr> <tr>
+<td>54</td>
+<td><span class="item" title="ヒサキが発明したヒーロー強化アイテム。Atkがアップする。"><img src="/cdn/Sprite/item_Valentine2102_power.png" loading="lazy"> パワーブースター</span></td>
+</tr> <tr>
+<td>55</td>
+<td><span class="item" title="ヒサキが発明したヒーロー強化アイテム。HPを増加させる。"><img src="/cdn/Sprite/item_Valentine2102_energy.png" loading="lazy"> エネルギータンク</span></td>
+</tr> <tr>
+<td>56</td>
+<td><span class="item" title="ヒサキが発明したヒーロー強化アイテム。被ダメージを減少させる。"><img src="/cdn/Sprite/item_Valentine2102_defense.png" loading="lazy"> ディフェンシブスキン</span></td>
+</tr> <tr>
+<td>57</td>
+<td><span class="item" title="情報収集用の小型カメラ。交換所でアイテムと交換してもらえる。"><img src="/cdn/Sprite/item_Valentine2102_exchange01.png" loading="lazy"> マイクロカメラ</span></td>
+</tr> <tr>
+<td>58</td>
+<td><span class="item" title="ガジェット開発用の部品。交換所でアイテムと交換してもらえる。"><img src="/cdn/Sprite/item_Valentine2102_exchange02.png" loading="lazy"> メカパーツ</span></td>
+</tr> <tr>
+<td>59</td>
+<td><span class="item" title="パラレルウェポンを改造するのに必要なアイテム"><img src="/cdn/Sprite/item_pwexp.png" loading="lazy"> パラレル・クオーツ</span></td>
+</tr> <tr>
+<td>60</td>
+<td><span class="item" title="パラレルウェポンのフォームを、平均的に能力値が増加する「ベースフォーム」に変更できるアイテム。"><img src="/cdn/Sprite/item_stance_normal.png" loading="lazy"> ベース・デザイン</span></td>
+</tr> <tr>
+<td>61</td>
+<td><span class="item" title="パラレルウェポンのフォームを、Atkがより増加する「アタックフォーム」に変更できるアイテム。"><img src="/cdn/Sprite/item_stance_attack.png" loading="lazy"> アタック・デザイン</span></td>
+</tr> <tr>
+<td>62</td>
+<td><span class="item" title="パラレルウェポンのフォームを、HPがより増加する「フィジカルフォーム」に変更できるアイテム。"><img src="/cdn/Sprite/item_stance_physical.png" loading="lazy"> フィジカル・デザイン</span></td>
+</tr> <tr>
+<td>63</td>
+<td><span class="item" title="パラレルウェポンのフォームを、被ダメージがより減少する「ガードフォーム」に変更できるアイテム。"><img src="/cdn/Sprite/item_stance_guard.png" loading="lazy"> ガード・デザイン</span></td>
+</tr> <tr>
+<td>64</td>
+<td><span class="item" title="ダンジョン探索中にマッピングを行った冒険の地図。交換所でアイテムと交換してもらえる。"><img src="/cdn/Sprite/item_Ruins2104_exchange01.png" loading="lazy"> 冒険マップ</span></td>
+</tr> <tr>
+<td>65</td>
+<td><span class="item" title="オート行動時に第2スキルを優先して使用する「セカンド・アタック」を習得できる技術書。"><img src="/cdn/Sprite/item_equipskill_auto_2ndAttack.png" loading="lazy"> セカンド・アタックの技術書</span></td>
+</tr> <tr>
+<td>66</td>
+<td><span class="item" title="オート行動時に第3スキルを優先して使用する「サード・アタック」を習得できる技術書。"><img src="/cdn/Sprite/item_equipskill_auto_3rdAttack.png" loading="lazy"> サード・アタックの技術書</span></td>
+</tr> <tr>
+<td>67</td>
+<td><span class="item" title="現地の画像・映像データをまとめたスクラップブック用データ。交換所でアイテムと交換してもらえる。"><img src="/cdn/Sprite/item_Chasers2105_exchange01.png" loading="lazy"> メディア・フォルダー</span></td>
+</tr> <tr>
+<td>68</td>
+<td><span class="item" title="ヒーロー事務所間で使われる期限付き独自通貨。交換所でアイテムと交換できる。"><img src="/cdn/Sprite/item_simulator.png" loading="lazy"> ヒーロニウム</span></td>
+</tr> <tr>
+<td>69</td>
+<td><span class="item" title="ムイラウカⅣの海底で拾える綺麗な砂。交換所でアイテムと交換してもらえる。"><img src="/cdn/Sprite/item_Summerdive2108_exchange01.png" loading="lazy"> 星の砂</span></td>
+</tr> <tr>
+<td>70</td>
+<td><span class="item" title="１周年記念に配布された、☆４ヒーロー・サイドキック交換所で使用できるチケット"><img src="/cdn/Sprite/item_1stAnniversaryTicket.png" loading="lazy"> 1stアニバーサリー交換チケット</span></td>
+</tr> <tr>
+<td>71</td>
+<td><span class="item" title="夏祭りの露天で売っているお面。交換所でアイテムと交換してもらえる。"><img src="/cdn/Sprite/item_Herofesta2109_exchange01.png" loading="lazy"> 夏祭りのお面</span></td>
+</tr> <tr>
+<td>72</td>
+<td><span class="item" title="聖夜に降り注いだ隕石のかけら。交換所でアイテムと交換してもらえる。"><img src="/cdn/Sprite/item_Meteorite2112_exchange01.png" loading="lazy"> 隕石のかけら</span></td>
+</tr> <tr>
+<td>73</td>
+<td><span class="item" title="新年に強敵を倒したご褒美。交換所でアイテムと交換できる。"><img src="/cdn/Sprite/item_Newyear2201_exchange01.png" loading="lazy"> お年玉</span></td>
+</tr> <tr>
+<td>74</td>
+<td><span class="item" title="レコードキューブの破片。複数集めるとショップでレコードキューブと交換できる。"><img src="/cdn/Sprite/item_recordcubepiece.png" loading="lazy"> レコードキューブの欠片</span></td>
+</tr> <tr>
+<td>75</td>
+<td><span class="item" title="サーチポイントが時間を経て変換された構造体。ショップでアイテムと交換できる。"><img src="/cdn/Sprite/item_searchstruct.png" loading="lazy"> サーチ・ストラクチャ</span></td>
+</tr> <tr>
+<td>76</td>
+<td><span class="item" title="サーカスで貰える風船。交換所でアイテムと交換して貰える。"><img src="/cdn/Sprite/item_Circus2202_exchange01.png" loading="lazy"> サーカス・バルーン</span></td>
+</tr> <tr>
+<td>77</td>
+<td><span class="item" title="ウェーマルトで人気の花のおみやげ。交換所でアイテムと交換して貰える。"><img src="/cdn/Sprite/item_GhostWoods2204_exchange01.png" loading="lazy"> フラワードーム</span></td>
+</tr> <tr>
+<td>78</td>
+<td><span class="item" title="稟議を通すために集めたハンコ。オフィスで稟議を通すのに使用できる。"><img src="/cdn/Sprite/item_hanko_01.png" loading="lazy"> 承認のハンコ</span></td>
+</tr> <tr>
+<td>79</td>
+<td><span class="item" title="強い力を持った承認のハンコ。オフィスで稟議を通すのに使用できる。"><img src="/cdn/Sprite/item_hanko_02.png" loading="lazy"> 会社実印</span></td>
+</tr> <tr>
+<td>80</td>
+<td><span class="item" title="「EXPアイテムクエスト」で獲得できるEXPが+3%される「経験の蓄積」を習得できる技術書。"><img src="/cdn/Sprite/item_equipskill_exp.png" loading="lazy"> 経験の技術書</span></td>
+</tr> <tr>
+<td>81</td>
+<td><span class="item" title="「トレーニングバンド獲得クエスト」で獲得できるリレーションが+3%される「交流の蓄積」を習得できる技術書。"><img src="/cdn/Sprite/item_equipskill_relation.png" loading="lazy"> 交流の技術書</span></td>
+</tr> <tr>
+<td>82</td>
+<td><span class="item" title="クエストで獲得できるラフが+3%される「荒稼ぎ」を習得できる技術書。"><img src="/cdn/Sprite/item_equipskill_lah.png" loading="lazy"> 荒稼ぎの技術書</span></td>
+</tr> <tr>
+<td>93</td>
+<td><span class="item" title="いつものBGMのディスク。"><img src="/cdn/Sprite/item_office_sound.png" loading="lazy"> ノーマルディスク</span></td>
+</tr> <tr>
+<td>94</td>
+<td><span class="item" title="いつもの戦闘BGMのディスク。所持しているとオフィスの改善度が1上がる。オフィスのBGMを変更できる。"><img src="/cdn/Sprite/item_office_sound.png" loading="lazy"> 戦闘ディスク</span></td>
+</tr> <tr>
+<td>95</td>
+<td><span class="item" title="第１部４章のBGMのディスク。所持しているとオフィスの改善度が1上がる。オフィスのBGMを変更できる。"><img src="/cdn/Sprite/item_office_sound.png" loading="lazy"> 黒の試練ディスク</span></td>
+</tr> <tr>
+<td>96</td>
+<td><span class="item" title="第１部５章のBGMのディスク。所持しているとオフィスの改善度が1上がる。オフィスのBGMを変更できる。"><img src="/cdn/Sprite/item_office_sound.png" loading="lazy"> 光の道標ディスク</span></td>
+</tr> <tr>
+<td>97</td>
+<td><span class="item" title="第１部５章の戦闘BGMのディスク。所持しているとオフィスの改善度が1上がる。オフィスのBGMを変更できる。"><img src="/cdn/Sprite/item_office_sound.png" loading="lazy"> 光の道標戦闘ディスク</span></td>
+</tr> <tr>
+<td>98</td>
+<td><span class="item" title="暁のゴールデン・スピリッツの戦闘BGMのディスク。オフィスのBGMを変更できる。"><img src="/cdn/Sprite/item_office_sound.png" loading="lazy"> ゴールデン・スピリッツ戦闘ディスク</span></td>
+</tr> <tr>
+<td>99</td>
+<td><span class="item" title="オフィスの背景を元の背景に戻すアイテム。"><img src="/cdn/Sprite/item_icon_bg_battle_office.png" loading="lazy"> オフィスルーム</span></td>
+</tr> <tr>
+<td>100</td>
+<td><span class="item" title="オフィスの背景にトレーニングルームの映像を投影するホログラム。所持しているとオフィスの改善度が1上がる。オフィスの背景を変更できる。"><img src="/cdn/Sprite/item_icon_bg_battle_trainingroom.png" loading="lazy"> トレーニングルームホログラム</span></td>
+</tr> <tr>
+<td>101</td>
+<td><span class="item" title="オフィスの背景にレストランの映像を投影するホログラム。所持しているとオフィスの改善度が1上がる。オフィスの背景を変更できる。"><img src="/cdn/Sprite/item_icon_bg_battle_restaurant.png" loading="lazy"> レストランホログラム</span></td>
+</tr> <tr>
+<td>102</td>
+<td><span class="item" title="オフィスの背景に温泉の映像を投影するホログラム。オフィスの背景を変更できる。"><img src="/cdn/Sprite/item_icon_bg_battle_garden_japanese.png" loading="lazy"> 温泉ホログラム</span></td>
+</tr> <tr>
+<td>108</td>
+<td><span class="item" title="「メダル獲得クエスト」でシルバーメダルを消費スタミナ×1%の確率で追加ドロップする「シルバーメダルの獲得法」を習得できる技術書。"><img src="/cdn/Sprite/item_equipskill_silver_medal.png" loading="lazy"> シルバーメダルの技術書</span></td>
+</tr> <tr>
+<td>109</td>
+<td><span class="item" title="「メダル獲得クエスト」でゴールドメダルを消費スタミナ×0.2%の確率で追加ドロップする「ゴールドメダルの獲得法」を習得できる技術書。"><img src="/cdn/Sprite/item_equipskill_gold_medal.png" loading="lazy"> ゴールドメダルの技術書</span></td>
+</tr> <tr>
+<td>110</td>
+<td><span class="item" title="「パラレル・クオーツ獲得クエスト」でパラレル・クオーツを消費スタミナ×0.5%の確率で追加ドロップする「クオーツの探索法」を習得できる技術書。"><img src="/cdn/Sprite/item_equipskill_quartz.png" loading="lazy"> クオーツの技術書</span></td>
+</tr> <tr>
+<td>111</td>
+<td><span class="item" title="「ランクアップアイテムクエスト」でクエストの属性の小覚醒石を消費スタミナ×2%の確率で追加ドロップする「小覚醒石の探索法」を習得できる技術書。"><img src="/cdn/Sprite/item_equipskill_small_stone.png" loading="lazy"> 小覚醒石の技術書</span></td>
+</tr> <tr>
+<td>112</td>
+<td><span class="item" title="「ランクアップアイテムクエスト」でクエストの属性の中覚醒石を消費スタミナ×1%の確率で追加ドロップする「中覚醒石の探索法」を習得できる技術書。"><img src="/cdn/Sprite/item_equipskill_middle_stone.png" loading="lazy"> 中覚醒石の技術書</span></td>
+</tr> <tr>
+<td>113</td>
+<td><span class="item" title="「ランクアップアイテムクエスト」でクエストの属性の大覚醒石を消費スタミナ×0.5%の確率で追加ドロップする「大覚醒石の探索法」を習得できる技術書。"><img src="/cdn/Sprite/item_equipskill_large_stone.png" loading="lazy"> 大覚醒石の技術書</span></td>
+</tr> <tr>
+<td>114</td>
+<td><span class="item" title="極楽！聖夜の熱湯戦線の戦闘BGMのディスク。オフィスのBGMを変更できる。"><img src="/cdn/Sprite/item_office_sound.png" loading="lazy"> 熱湯戦線戦闘ディスク</span></td>
+</tr> <tr>
+<td>115</td>
+<td><span class="item" title="極楽！聖夜の熱湯戦線のBGMのディスク。オフィスのBGMを変更できる。"><img src="/cdn/Sprite/item_office_sound.png" loading="lazy"> 熱湯戦線ディスク</span></td>
+</tr> <tr>
+<td>116</td>
+<td><span class="item" title="オフィスの背景に荒野の映像を投影するホログラム。オフィスの背景を変更できる。"><img src="/cdn/Sprite/item_icon_bg_battle_wasteland.png" loading="lazy"> 荒野ホログラム</span></td>
+</tr> <tr>
+<td>117</td>
+<td><span class="item" title="スペース・タクシー・チェイサーズの戦闘BGMのディスク。オフィスのBGMを変更できる。"><img src="/cdn/Sprite/item_office_sound.png" loading="lazy"> チェイサーズ戦闘ディスク</span></td>
+</tr> <tr>
+<td>118</td>
+<td><span class="item" title="スペース・タクシー・チェイサーズのBGMのディスク。オフィスのBGMを変更できる。"><img src="/cdn/Sprite/item_office_sound.png" loading="lazy"> チェイサーズディスク</span></td>
+</tr> <tr>
+<td>119</td>
+<td><span class="item" title="オフィスの背景に戦場の映像を投影するホログラム。オフィスの背景を変更できる。"><img src="/cdn/Sprite/item_icon_bg_battle_warzone_day_cenotaph.png" loading="lazy"> 戦場ホログラム</span></td>
+</tr> <tr>
+<td>120</td>
+<td><span class="item" title="湖に沈んでいる古代超文明の遺産。交換所でアイテムと交換してもらえる。"><img src="/cdn/Sprite/item_LostAncients2208_exchange01.png" loading="lazy"> オーパーツ</span></td>
+</tr> <tr>
+<td>121</td>
+<td><span class="item" title="蒼碧のロスト・エンシェンツの戦闘BGMのディスク。オフィスのBGMを変更できる。"><img src="/cdn/Sprite/item_office_sound.png" loading="lazy"> ロスト・エンシェンツ戦闘ディスク</span></td>
+</tr> <tr>
+<td>122</td>
+<td><span class="item" title="蒼碧のロスト・エンシェンツのボス戦闘BGMのディスク。オフィスのBGMを変更できる。"><img src="/cdn/Sprite/item_office_sound.png" loading="lazy"> ロスト・エンシェンツボス戦闘ディスク</span></td>
+</tr> <tr>
+<td>123</td>
+<td><span class="item" title="蒼碧のロスト・エンシェンツの湖畔BGMのディスク。オフィスのBGMを変更できる。"><img src="/cdn/Sprite/item_office_sound.png" loading="lazy"> ロスト・エンシェンツディスク</span></td>
+</tr> <tr>
+<td>124</td>
+<td><span class="item" title="蒼碧のロスト・エンシェンツの遺跡BGMのディスク。オフィスのBGMを変更できる。"><img src="/cdn/Sprite/item_office_sound.png" loading="lazy"> ロスト・エンシェンツ遺跡ディスク</span></td>
+</tr> <tr>
+<td>125</td>
+<td><span class="item" title="オフィスの背景に湖の浅瀬の映像を投影するホログラム。オフィスの背景を変更できる。"><img src="/cdn/Sprite/item_icon_bg_battle_underwater_day.png" loading="lazy"> 湖の浅瀬ホログラム</span></td>
+</tr> <tr>
+<td>126</td>
+<td><span class="item" title="オフィスの背景に古代文明の遺跡を投影するホログラム。オフィスの背景を変更できる。"><img src="/cdn/Sprite/item_icon_bg_battle_ancientcity.png" loading="lazy"> 古代文明の遺跡ホログラム</span></td>
+</tr> <tr>
+<td>127</td>
+<td><span class="item" title="闘え！真夏のヒーローフェスタの戦闘BGMのディスク。オフィスのBGMを変更できる。"><img src="/cdn/Sprite/item_office_sound.png" loading="lazy"> ヒーローフェスタ戦闘ディスク</span></td>
+</tr> <tr>
+<td>128</td>
+<td><span class="item" title="闘え！真夏のヒーローフェスタのBGMのディスク。オフィスのBGMを変更できる。"><img src="/cdn/Sprite/item_office_sound.png" loading="lazy"> ヒーローフェスタディスク</span></td>
+</tr> <tr>
+<td>129</td>
+<td><span class="item" title="オフィスの背景にスタジアムの映像を投影するホログラム。オフィスの背景を変更できる。"><img src="/cdn/Sprite/item_icon_bg_battle_stadium.png" loading="lazy"> スタジアムホログラム</span></td>
+</tr> </table> </div> </main> <footer class="content__area"> <nav class="content"> <p>Content is available under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike</a> unless otherwise noted. Live A Hero content and materials are trademarks and copyrights of LifeWonders Inc. or its licensors. All rights reserved.</p> <p>Powered by <a href="http://jekyllrb.com/">Jekyll</a></p> </nav> </footer> <script async src="/assets/main.js"></script> <script async src="/assets/analytics.js"></script> </body> </html>

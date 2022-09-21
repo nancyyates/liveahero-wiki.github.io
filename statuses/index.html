@@ -1,0 +1,391 @@
+<!DOCTYPE html> <html> <head> <title>Statuses - Live A Hero Wiki</title> <meta charset="utf-8"> <meta name="viewport" content="width=device-width,minimum-scale=1.0"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="theme-color" content="#ffa726"> <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.ico"> <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap"> <link rel="stylesheet" type="text/css" href="/assets/main.css"> <link rel="canonical" href="https://liveahero-wiki.github.io/statuses/"> </head> <body> <div class="sidebar"> <header class="sidebar__logo" role="banner"> <img src="/assets/img/logo.png"> </header> <nav class="sidebar__nav"> <div class="sidebar__nav-interior"> <h3 class="section__header">Wiki</h3> <ul> <li> <a href="/">Main page</a> </li> <li> <a href="https://github.com/liveahero-wiki/liveahero-wiki.github.io/commits/master">Recent changes</a> </li> <li> <a href="https://github.com/liveahero-wiki/liveahero-wiki.github.io/">Open source</a> </li> <li> <a href="/faq/">FAQ</a> </li> </ul> <h3 class="section__header">Catalogs</h3> <ul> <li> <a href="/events/">Events</a> </li> <li> <a href="/charas/#heroes">Heroes</a> </li> <li> <a href="/charas/#sidekicks">Sidekicks</a> </li> <li> <a href="/charas/#unreleased">Unreleased units</a> </li> <li> <a href="/mobs/">Mobs and Enemies</a> </li> <li> <a href="/affiliations/">Affiliations</a> </li> <li> <a href="/illustrators/">Illustrators</a> </li> <li> <a href="/voice_actors/">Voice Actors</a> </li> <li> <a href="/main_quests/">Main Quests</a> </li> <li> <a href="/chara_quests/">Character Quests</a> </li> <li> <a href="/misc/">More...</a> </li> </ul> <h3 class="section__header">Basic Information</h3> <ul> <li> <a href="/guide/">Getting Started</a> </li> <li> <a href="/guide/hero/">Hero</a> </li> <li> <a href="/guide/sidekick/">Sidekick</a> </li> <li> <a href="/guide/gacha/">Gacha</a> </li> <li> <a href="/guide/user_rank/">Stamina and User Rank</a> </li> <li> <a href="/guide/battle/">Battle</a> </li> <li> <a href="/guide/quest/">Quest</a> </li> <li> <a href="/guide/quest_scenario/">Quest Scenario</a> </li> <li> <a href="/guide/challenge_simulator/">Challenge Simulator</a> </li> <li> <a href="/guide/shop/">Shop</a> </li> <li> <a href="/guide/login_bonus/">Login Bonus</a> </li> <li> <a href="/guide/mission/">Mission</a> </li> <li> <a href="/guide/sale/">Sale</a> </li> <li> <a href="/guide/training/">Training</a> </li> <li> <a href="/guide/parallel_weapon/">Parallel Weapon Remodelling</a> </li> <li> <a href="/guide/skill_manual/">Skill Manual</a> </li> <li> <a href="/guide/engraving_enhancement/">Engraving Enhancement</a> </li> <li> <a href="/guide/office/">Office</a> </li> </ul> <h3 class="section__header">Tools</h3> <ul> <li> <a href="https://github.com/liveahero-wiki/liveahero-wiki.github.io/upload/master/assets/img">Upload image</a> </li> </ul> <h3 class="section__header">Contributing</h3> <ul> <li> <a href="/contributing/">How to contribute</a> </li> <li> <a href="/contributing/writing/">Writing Guide</a> </li> <li> <a href="/contributing/programming/">Programming Guide</a> </li> </ul> </div> </nav> </div> <div class="content__overlay"></div> <main class="content__area"> <div class="content"> <aside class="wiki-msg"> <img class="emoji" title=":date:" alt=":date:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4c5.png" height="20" width="20"> <a href="https://docs.google.com/forms/d/e/1FAIpQLSeTrC1NxFb5Y4x7cR3grUz0diLAFDBSNhFa87deoU23F1km2Q/viewform?usp=sf_link">LAH Wiki Survey (2022 edition)</a> is opened, please spend some time to fill it! </aside> <aside class="clearfix"> <button class="menu-button"> <span aria-hidden="true"><svg height="16" viewbox="0 0 12 16" width="12" xmlns="http://www.w3.org/2000/svg"><path d="m11.41 9h-10.82c-.59 0-.59-.41-.59-1s0-1 .59-1h10.81c.59 0 .59.41.59 1s0 1-.59 1zm0-4h-10.82c-.59 0-.59-.41-.59-1s0-1 .59-1h10.81c.59 0 .59.41.59 1s0 1-.59 1zm-10.82 6h10.81c.59 0 .59.41.59 1s0 1-.59 1h-10.81c-.59 0-.59-.41-.59-1s0-1 .59-1z"></path></svg></span> <span>Menu</span> </button> <a class="github-button" href="https://github.com/liveahero-wiki/liveahero-wiki.github.io/edit/master/statuses.html">Edit this page</a> </aside> <div class="page-header"> <h1><a href="/statuses/">Statuses</a></h1> </div> <p>To add a status when writing a Wiki page, write <code>{{ id_number | status_description }}</code>.</p> <p>Example: <code>{{ 1 | status_description }}</code> will becomes <span class="status" data-id="1" title="Multiply attack power by 1.5"><img src="/cdn/Sprite/status_atkup.png" loading="lazy"> Attack Up</span> when rendered.</p> <table> <tr>
+<th>ID</th>
+<th>Status</th>
+</tr> <tr>
+<td>1</td>
+<td><span class="status" data-id="1" title="Multiply attack power by 1.5"><img src="/cdn/Sprite/status_atkup.png" loading="lazy"> Attack Up</span></td>
+</tr> <tr>
+<td>2</td>
+<td><span class="status" data-id="2" title="For one hit, damage from opponent is halved"><img src="/cdn/Sprite/status_defup.png" loading="lazy"> Defense Up</span></td>
+</tr> <tr>
+<td>3</td>
+<td><span class="status" data-id="3" title="Increase Speed by 10"><img src="/cdn/Sprite/status_agiup.png" loading="lazy"> Speed Up</span></td>
+</tr> <tr>
+<td>4</td>
+<td><span class="status" data-id="4" title="Multiply own view status by 1.5"><img src="/cdn/Sprite/status_attention.png" loading="lazy"> Attention</span></td>
+</tr> <tr>
+<td>5</td>
+<td><span class="status" data-id="5" title="Enemies will be more likely to target you until the end of turn"><img src="/cdn/Sprite/status_provocation.png" loading="lazy"> Provocation</span></td>
+</tr> <tr>
+<td>6</td>
+<td><span class="status" data-id="6" title="Negate incoming damage once"><img src="/cdn/Sprite/status_invincible.png" loading="lazy"> Invincible</span></td>
+</tr> <tr>
+<td>7</td>
+<td><span class="status" data-id="7" title="Increase the activation rate of skill effects by 20%"><img src="/cdn/Sprite/status_lucky.png" loading="lazy"> Good Luck</span></td>
+</tr> <tr>
+<td>8</td>
+<td><span class="status" data-id="8" title="Viewpoint required to use skills is halved"><img src="/cdn/Sprite/status_awakening.png" loading="lazy"> Awakening</span></td>
+</tr> <tr>
+<td>9</td>
+<td><span class="status" data-id="9" title="Resurrect on death"><img src="/cdn/Sprite/status_reincanate.png" loading="lazy"> Resurrection</span></td>
+</tr> <tr>
+<td>10</td>
+<td><span class="status" data-id="10" title="Heals 10% of Maximum HP at the end of turn"><img src="/cdn/Sprite/status_regenerate.png" loading="lazy"> Regen</span></td>
+</tr> <tr>
+<td>11</td>
+<td><span class="status" data-id="11" title="Multiply attack power by 0.5"><img src="/cdn/Sprite/status_atkdown.png" loading="lazy"> Attack Down</span></td>
+</tr> <tr>
+<td>12</td>
+<td><span class="status" data-id="12" title="For one hit, multiply damage received by 1.5"><img src="/cdn/Sprite/status_defdown.png" loading="lazy"> Defense Down</span></td>
+</tr> <tr>
+<td>13</td>
+<td><span class="status" data-id="13" title="Decrease speed by 10"><img src="/cdn/Sprite/status_agidown.png" loading="lazy"> Speed Down</span></td>
+</tr> <tr>
+<td>14</td>
+<td><span class="status" data-id="14" title="Self view becomes 0"><img src="/cdn/Sprite/status_mosaic.png" loading="lazy"> Mosaic</span></td>
+</tr> <tr>
+<td>15</td>
+<td><span class="status" data-id="15" title="Enemies will be less likely to target you until the end of turn"><img src="/cdn/Sprite/status_hide.png" loading="lazy"> Hide</span></td>
+</tr> <tr>
+<td>16</td>
+<td><span class="status" data-id="16" title="Reduce activation rate of skill effects by 20%"><img src="/cdn/Sprite/status_unlucky.png" loading="lazy"> Bad Luck</span></td>
+</tr> <tr>
+<td>17</td>
+<td><span class="status" data-id="17" title="Double the viewpoint cost of skills"><img src="/cdn/Sprite/status_useless.png" loading="lazy"> Over-consumption</span></td>
+</tr> <tr>
+<td>18</td>
+<td><span class="status" data-id="18" title="Take 5% of maximum HP as damage at the end of turn"><img src="/cdn/Sprite/status_poison.png" loading="lazy"> Poison</span></td>
+</tr> <tr>
+<td>19</td>
+<td><span class="status" data-id="19" title="Take 10% of maximum HP as damage at the end of turn"><img src="/cdn/Sprite/status_flame.png" loading="lazy"> Burn</span></td>
+</tr> <tr>
+<td>20</td>
+<td><span class="status" data-id="20" title="Increase Speed by 30"><img src="/cdn/Sprite/status_superagiup.png" loading="lazy"> Super Speed Up</span></td>
+</tr> <tr>
+<td>21</td>
+<td><span class="status" data-id="21" title="Reduce the chance of debuff being applied by 20%"><img src="/cdn/Sprite/status_immunity.png" loading="lazy"> Debuff Immunity</span></td>
+</tr> <tr>
+<td>22</td>
+<td><span class="status" data-id="22" title="Prohibit the use of skills that cost viewpoint"><img src="/cdn/Sprite/status_silence.png" loading="lazy"> Silence</span></td>
+</tr> <tr>
+<td>23</td>
+<td><span class="status" data-id="23" title="The more HP is reduced, the more attack is increased"><img src="/cdn/Sprite/status_firepower.png" loading="lazy"> Burning Power</span></td>
+</tr> <tr>
+<td>24</td>
+<td><span class="status" data-id="24" title="Put yourself last in the current order of action"><img src="/cdn/Sprite/b_skill_wait.png" loading="lazy"> Wait</span></td>
+</tr> <tr>
+<td>25</td>
+<td><span class="status" data-id="25" title="Increase attack power based on speed difference from the opponent"><img src="/cdn/Sprite/status_speedatk.png" loading="lazy"> Agile</span></td>
+</tr> <tr>
+<td>26</td>
+<td><span class="status" data-id="26" title="Collect damage from area attack to self until the end of turn"><img src="/cdn/Sprite/status_damageAggregation.png" loading="lazy"> Damage aggregation</span></td>
+</tr> <tr>
+<td>27</td>
+<td><span class="status" data-id="27" title="Permanently activated until the end of battle"><img src="/cdn/Sprite/b_skill_special.png" loading="lazy"> Persistent Effect</span></td>
+</tr> <tr>
+<td>28</td>
+<td><span class="status" data-id="28" title="Effects triggered by event"><img src="/cdn/Sprite/b_skill_special.png" loading="lazy"> Event Bonus</span></td>
+</tr> <tr>
+<td>29</td>
+<td><span class="status" data-id="29" title="Decrease speed by 30"><img src="/cdn/Sprite/status_superagidown.png" loading="lazy"> Super Speed Down</span></td>
+</tr> <tr>
+<td>30</td>
+<td><span class="status" data-id="30" title="Effects triggered by items"><img src="/cdn/Sprite/b_skill_special.png" loading="lazy"> Item Effect</span></td>
+</tr> <tr>
+<td>31</td>
+<td><span class="status" data-id="31" title="HP increase with items"><img src="/cdn/Sprite/b_skill_special.png" loading="lazy"> Item Effect: HP Up</span></td>
+</tr> <tr>
+<td>32</td>
+<td><span class="status" data-id="32" title="Atk increase with items"><img src="/cdn/Sprite/b_skill_special.png" loading="lazy"> Item Effect: Atk Up</span></td>
+</tr> <tr>
+<td>33</td>
+<td><span class="status" data-id="33" title="Reduce damage received with items"><img src="/cdn/Sprite/b_skill_special.png" loading="lazy"> Item Effect: Damage Reduction</span></td>
+</tr> <tr>
+<td>34</td>
+<td><span class="status" data-id="34" title="When taking damage, take additional 40% atk of the Burst status creator"><img src="/cdn/Sprite/status_burst.png" loading="lazy"> Burst</span></td>
+</tr> <tr>
+<td>35</td>
+<td><span class="status" data-id="35" title="Kaibutsu's Tentacle"><img src="/cdn/Sprite/b_skill_special.png" loading="lazy"> Tentacle</span></td>
+</tr> <tr>
+<td>36</td>
+<td><span class="status" data-id="36" title="Reduce view cost by 3000"><img src="/cdn/Sprite/status_burst.png" loading="lazy"> View Cost -3000</span></td>
+</tr> <tr>
+<td>37</td>
+<td><span class="status" data-id="37" title="Attack increase by quest bonus"><img src="/cdn/Sprite/status_burst.png" loading="lazy"> Bonus: Atk Up</span></td>
+</tr> <tr>
+<td>38</td>
+<td><span class="status" data-id="38" title="Reduce view cost by 2000"><img src="/cdn/Sprite/status_burst.png" loading="lazy"> View Cost -2000</span></td>
+</tr> <tr>
+<td>39</td>
+<td><span class="status" data-id="39" title="Increase view cost by 4000"><img src="/cdn/Sprite/status_burst.png" loading="lazy"> View Cost +4000</span></td>
+</tr> <tr>
+<td>40</td>
+<td><span class="status" data-id="40" title="Unable to act until the end of turn"><img src="/cdn/Sprite/status_burst.png" loading="lazy"> Behavioural Suspension</span></td>
+</tr> <tr>
+<td>41</td>
+<td><span class="status" data-id="41" title="Multiply attack power by 1.1"><img src="/cdn/Sprite/b_skill_special.png" loading="lazy"> Attack Up (Small)</span></td>
+</tr> <tr>
+<td>42</td>
+<td><span class="status" data-id="42" title=""><img src="/cdn/Sprite/b_skill_special.png" loading="lazy"> </span></td>
+</tr> <tr>
+<td>43</td>
+<td><span class="status" data-id="43" title=""><img src="/cdn/Sprite/b_skill_special.png" loading="lazy"> </span></td>
+</tr> <tr>
+<td>44</td>
+<td><span class="status" data-id="44" title="Reduce the chance of debuff being applied by 100%"><img src="/cdn/Sprite/status_immunity.png" loading="lazy"> Debuff Resistance 100%</span></td>
+</tr> <tr>
+<td>45</td>
+<td><span class="status" data-id="45" title=""><img src="/cdn/Sprite/b_skill_special.png" loading="lazy"> </span></td>
+</tr> <tr>
+<td>46</td>
+<td><span class="status" data-id="46" title="Reduce the chance of debuff being applied by 100%"><img src="/cdn/Sprite/status_immunity.png" loading="lazy"> Debuff Resistance 100%</span></td>
+</tr> <tr>
+<td>47</td>
+<td><span class="status" data-id="47" title=""><img src="/cdn/Sprite/b_skill_special.png" loading="lazy"> </span></td>
+</tr> <tr>
+<td>48</td>
+<td><span class="status" data-id="48" title="Cannot be inflicted with certain debuff"><img src="/cdn/Sprite/b_skill_special.png" loading="lazy"> Void</span></td>
+</tr> <tr>
+<td>49</td>
+<td><span class="status" data-id="49" title="Speed +5, decrease VP consumption by 2000, cannot be removed"><img src="/cdn/Sprite/b_skill_special.png" loading="lazy"> Clock Up</span></td>
+</tr> <tr>
+<td>50</td>
+<td><span class="status" data-id="50" title="You will be more likely to be targeted by enemies until the end of turn"><img src="/cdn/Sprite/status_target.png" loading="lazy"> Target</span></td>
+</tr> <tr>
+<td>51</td>
+<td><span class="status" data-id="51" title="Reduce view consumption by 18000"><img src="/cdn/Sprite/status_awakening.png" loading="lazy"> View consumption -18000</span></td>
+</tr> <tr>
+<td>52</td>
+<td><span class="status" data-id="52" title="Reduce the chance of debuff being applied by 10%"><img src="/cdn/Sprite/b_skill_buff.png" loading="lazy"> Debuff Resistance 10%</span></td>
+</tr> <tr>
+<td>53</td>
+<td><span class="status" data-id="53" title="System status with no effect on its own. Certain skill will trigger depending on the number of this status"><img src="/cdn/Sprite/b_skill_special.png" loading="lazy"> Fanaticism</span></td>
+</tr> <tr>
+<td>54</td>
+<td><span class="status" data-id="54" title=""><img src="/cdn/Sprite/ui_button_square_02.png" loading="lazy"> system status 54</span></td>
+</tr> <tr>
+<td>55</td>
+<td><span class="status" data-id="55" title="View base value is halved"><img src="/cdn/Sprite/status_mosaic.png" loading="lazy"> View Reduction</span></td>
+</tr> <tr>
+<td>56</td>
+<td><span class="status" data-id="56" title="An item that replenishes oxygen in the ocean. Damage received by hero will also damage it."><img src="/cdn/Sprite/status_reincanate.png" loading="lazy"> Oxygen Cylinder</span></td>
+</tr> <tr>
+<td>57</td>
+<td><span class="status" data-id="57" title="System status with no effect on its own. Certain skill will trigger depending on the number of this status"><img src="/cdn/Sprite/b_skill_special.png" loading="lazy"> Stacking Effect</span></td>
+</tr> <tr>
+<td>58</td>
+<td><span class="status" data-id="58" title="Increase view cost by 1000"><img src="/cdn/Sprite/status_mosaic.png" loading="lazy"> View Cost +1000</span></td>
+</tr> <tr>
+<td>59</td>
+<td><span class="status" data-id="59" title="Reduce the chance of debuff being inflicted"><img src="/cdn/Sprite/status_immunity.png" loading="lazy"> Debuff Resistance</span></td>
+</tr> <tr>
+<td>60</td>
+<td><span class="status" data-id="60" title="Limited Victom Special Effect"><img src="/cdn/Sprite/ui_button_square_02.png" loading="lazy"> system status 60</span></td>
+</tr> <tr>
+<td>61</td>
+<td><span class="status" data-id="61" title="Reduce the amount of view consumed. Cannot be removed"><img src="/cdn/Sprite/status_awakening.png" loading="lazy"> Decrease View Cost</span></td>
+</tr> <tr>
+<td>62</td>
+<td><span class="status" data-id="62" title="Increase the amount of view consumed. Cannot be removed"><img src="/cdn/Sprite/status_useless.png" loading="lazy"> Increase View Cost</span></td>
+</tr> <tr>
+<td>63</td>
+<td><span class="status" data-id="63" title="Reduce the amount of view consumed. Cannot be removed"><img src="/cdn/Sprite/status_awakening.png" loading="lazy"> Decrease View Cost</span></td>
+</tr> <tr>
+<td>64</td>
+<td><span class="status" data-id="64" title=""><img src="/cdn/Sprite/status_awakening.png" loading="lazy"> </span></td>
+</tr> <tr>
+<td>65</td>
+<td><span class="status" data-id="65" title=""><img src="/cdn/Sprite/status_immunity.png" loading="lazy"> </span></td>
+</tr> <tr>
+<td>66</td>
+<td><span class="status" data-id="66" title="Count based on the number of times this take effect, triggered for a maximum of 5 times "><img src="/cdn/Sprite/b_skill_special.png" loading="lazy"> Okitaka Special (Sidekick)</span></td>
+</tr> <tr>
+<td>67</td>
+<td><span class="status" data-id="67" title="Increase Atk by 0.5% for every 1000 current viewpoint for a maximum of 50%"><img src="/cdn/Sprite/b_skill_special.png" loading="lazy"> Victom Special</span></td>
+</tr> <tr>
+<td>68</td>
+<td><span class="status" data-id="68" title="Okitaka Special Effect for skill1"><img src="/cdn/Sprite/b_skill_special.png" loading="lazy"> Okitaka Special (Hero)</span></td>
+</tr> <tr>
+<td>69</td>
+<td><span class="status" data-id="69" title="Limited Victom Special Effect ViewMultiAttack Condition (Quest)"><img src="/cdn/Sprite/ui_button_square_02.png" loading="lazy"> system status 69</span></td>
+</tr> <tr>
+<td>70</td>
+<td><span class="status" data-id="70" title="Damage received is capped at 3000"><img src="/cdn/Sprite/b_skill_special.png" loading="lazy"> Cap damage at 3000</span></td>
+</tr> <tr>
+<td>71</td>
+<td><span class="status" data-id="71" title="Damage received is capped at 5000"><img src="/cdn/Sprite/b_skill_special.png" loading="lazy"> Cap damage at 5000</span></td>
+</tr> <tr>
+<td>72</td>
+<td><span class="status" data-id="72" title="Damage received is capped at 10000"><img src="/cdn/Sprite/b_skill_special.png" loading="lazy"> Cap damage at 10000</span></td>
+</tr> <tr>
+<td>73</td>
+<td><span class="status" data-id="73" title="Damage received is capped at 20000"><img src="/cdn/Sprite/b_skill_special.png" loading="lazy"> Cap damage at 20000</span></td>
+</tr> <tr>
+<td>74</td>
+<td><span class="status" data-id="74" title="Viewの消費量が減少する。"><img src="/cdn/Sprite/b_skill_special.png" loading="lazy"> View消費量減少</span></td>
+</tr> <tr>
+<td>75</td>
+<td><span class="status" data-id="75" title="Increase Atk by 1.3 times"><img src="/cdn/Sprite/status_atkup.png" loading="lazy"> Atk Up (Small)</span></td>
+</tr> <tr>
+<td>76</td>
+<td><span class="status" data-id="76" title="一度だけ相手からのダメージが0.7倍になる。"><img src="/cdn/Sprite/b_skill_special.png" loading="lazy"> コアを守るもの</span></td>
+</tr> <tr>
+<td>77</td>
+<td><span class="status" data-id="77" title="1ターンに2回行動を行う。スキルによる解除不可。"><img src="/cdn/Sprite/b_skill_special.png" loading="lazy"> 暴走</span></td>
+</tr> <tr>
+<td>78</td>
+<td><span class="status" data-id="78" title="Increase Atk by 2 times. Reduce 15% of self max HP at end of turn. Force auto action"><img src="/cdn/Sprite/status_berserk.png" loading="lazy"> Berserk</span></td>
+</tr> <tr>
+<td>79</td>
+<td><span class="status" data-id="79" title="ATKが数値だけ上昇する。この効果が重複した場合、効果量が多い方を優先する。"><img src="/cdn/Sprite/b_skill_special.png" loading="lazy"> ATKアップ(重複不可)</span></td>
+</tr> <tr>
+<td>80</td>
+<td><span class="status" data-id="80" title="カイブツのコアを包む膜"><img src="/cdn/Sprite/b_skill_special.png" loading="lazy"> 強化コア</span></td>
+</tr> <tr>
+<td>81</td>
+<td><span class="status" data-id="81" title="特定のデバフにかからない。"><img src="/cdn/Sprite/b_skill_special.png" loading="lazy"> 無効</span></td>
+</tr> <tr>
+<td>82</td>
+<td><span class="status" data-id="82" title="Increase number of Views earned by View acquisition skill by 1.5 times"><img src="/cdn/Sprite/status_concert.png" loading="lazy"> Concert</span></td>
+</tr> <tr>
+<td>83</td>
+<td><span class="status" data-id="83" title=""><img src="/cdn/Sprite/ui_button_square_02.png" loading="lazy"> system status 83</span></td>
+</tr> <tr>
+<td>84</td>
+<td><span class="status" data-id="84" title="Critical Effect"><img src="/cdn/Sprite/b_skill_special.png" loading="lazy"> Critical</span></td>
+</tr> <tr>
+<td>85</td>
+<td><span class="status" data-id="85" title="Reduction Effect"><img src="/cdn/Sprite/b_skill_special.png" loading="lazy"> Reduction</span></td>
+</tr> <tr>
+<td>86</td>
+<td><span class="status" data-id="86" title="Works as a number counter so that Vulpecula doesn't use his skill till the enemy is dead"><img src="/cdn/Sprite/b_skill_special.png" loading="lazy"> Vulpecula Special</span></td>
+</tr> <tr>
+<td>87</td>
+<td><span class="status" data-id="87" title="Furlong Evasion"><img src="/cdn/Sprite/b_skill_special.png" loading="lazy"> Furlong Evasion</span></td>
+</tr> <tr>
+<td>88</td>
+<td><span class="status" data-id="88" title="バフ・デバフの重複不可効果"><img src="/cdn/Sprite/b_skill_special.png" loading="lazy"> 重複不可効果</span></td>
+</tr> <tr>
+<td>92</td>
+<td><span class="status" data-id="92" title="Reduce damage received by 90%, cleared after a certain amount of turn, cannot be cleared by any skill"><img src="/cdn/Sprite/status_defup.png" loading="lazy"> Iron Wall</span></td>
+</tr> <tr>
+<td>93</td>
+<td><span class="status" data-id="93" title="View Cost -8000, cleared after a certain amount of turn, cannot be cleared by any skill"><img src="/cdn/Sprite/status_awakening.png" loading="lazy"> View Cost -8000</span></td>
+</tr> <tr>
+<td>94</td>
+<td><span class="status" data-id="94" title=""><img src="/cdn/Sprite/ui_button_square_02.png" loading="lazy"> system status 94</span></td>
+</tr> <tr>
+<td>95</td>
+<td><span class="status" data-id="95" title="Works as a number counter so that Flamier doesn't use her skill till the enemy is dead"><img src="/cdn/Sprite/b_skill_special.png" loading="lazy"> Flamier Special</span></td>
+</tr> <tr>
+<td>96</td>
+<td><span class="status" data-id="96" title=""><img src="/cdn/Sprite/ui_button_square_02.png" loading="lazy"> system status 96</span></td>
+</tr> <tr>
+<td>97</td>
+<td><span class="status" data-id="97" title=""><img src="/cdn/Sprite/ui_button_square_02.png" loading="lazy"> system status 97</span></td>
+</tr> <tr>
+<td>98</td>
+<td><span class="status" data-id="98" title=""><img src="/cdn/Sprite/ui_button_square_02.png" loading="lazy"> system status 98</span></td>
+</tr> <tr>
+<td>99</td>
+<td><span class="status" data-id="99" title=""><img src="/cdn/Sprite/ui_button_square_02.png" loading="lazy"> system status 99</span></td>
+</tr> <tr>
+<td>100</td>
+<td><span class="status" data-id="100" title=""><img src="/cdn/Sprite/ui_button_square_02.png" loading="lazy"> system status 100</span></td>
+</tr> <tr>
+<td>101</td>
+<td><span class="status" data-id="101" title="Increase allies Atk by 2% for every 1 current combo(max 50%)"><img src="/cdn/Sprite/b_skill_special.png" loading="lazy"> Lilac Special</span></td>
+</tr> <tr>
+<td>104</td>
+<td><span class="status" data-id="104" title="Increase Atk by 50% for one action, this status doesn't count as a buff"><img src="/cdn/Sprite/b_skill_special.png" loading="lazy"> Uplift</span></td>
+</tr> <tr>
+<td>105</td>
+<td><span class="status" data-id="105" title="Halve received damage once, this status doesn't count as a buff"><img src="/cdn/Sprite/b_skill_special.png" loading="lazy"> Excitement</span></td>
+</tr> <tr>
+<td>106</td>
+<td><span class="status" data-id="106" title="Multiply damage received by 1.5 times once, this status doesn't count as a debuff"><img src="/cdn/Sprite/b_skill_special.png" loading="lazy"> Fatigue</span></td>
+</tr> <tr>
+<td>107</td>
+<td><span class="status" data-id="107" title="When hit, give self Damaged Hero Suit status"><img src="/cdn/Sprite/b_skill_special.png" loading="lazy"> Damaged Hero Suit</span></td>
+</tr> <tr>
+<td>108</td>
+<td><span class="status" data-id="108" title="攻撃力3倍。スキルによる解除不可。"><img src="/cdn/Sprite/b_skill_special.png" loading="lazy"> 攻めの極意</span></td>
+</tr> <tr>
+<td>109</td>
+<td><span class="status" data-id="109" title="Viewの消費を-6000する。スキルによる解除不可。"><img src="/cdn/Sprite/b_skill_special.png" loading="lazy"> 映えの極意</span></td>
+</tr> <tr>
+<td>110</td>
+<td><span class="status" data-id="110" title="SPDが+20される。スキルによる解除不可。"><img src="/cdn/Sprite/b_skill_special.png" loading="lazy"> 速さの極意</span></td>
+</tr> <tr>
+<td>111</td>
+<td><span class="status" data-id="111" title="相手からのダメージが半分になる。スキルによる解除不可。"><img src="/cdn/Sprite/b_skill_special.png" loading="lazy"> 護りの極意</span></td>
+</tr> <tr>
+<td>112</td>
+<td><span class="status" data-id="112" title=""><img src="/cdn/Sprite/ui_button_square_02.png" loading="lazy"> system status 112</span></td>
+</tr> <tr>
+<td>113</td>
+<td><span class="status" data-id="113" title=""><img src="/cdn/Sprite/ui_button_square_02.png" loading="lazy"> system status 113</span></td>
+</tr> <tr>
+<td>114</td>
+<td><span class="status" data-id="114" title=""><img src="/cdn/Sprite/ui_button_square_02.png" loading="lazy"> system status 114</span></td>
+</tr> <tr>
+<td>115</td>
+<td><span class="status" data-id="115" title="Works as a number counter so that Santetsu doesn't has infinite turn"><img src="/cdn/Sprite/b_skill_special.png" loading="lazy"> Santetsu Special</span></td>
+</tr> <tr>
+<td>116</td>
+<td><span class="status" data-id="116" title="Apply Critical buff to allies, when allies has speed up critical chance is doubled"><img src="/cdn/Sprite/b_skill_special.png" loading="lazy"> Critical Buff</span></td>
+</tr> <tr>
+<td>117</td>
+<td><span class="status" data-id="117" title="相手よりSpdが高い場合に、Spd差に応じて攻撃時にクリティカルが発動。発動時、ダメージが1.3倍になる。"><img src="/cdn/Sprite/ui_button_square_02.png" loading="lazy"> system status 117</span></td>
+</tr> <tr>
+<td>118</td>
+<td><span class="status" data-id="118" title="When speed is greater than the opponent, there is a chance that damage is multiplied by 1.3"><img src="/cdn/Sprite/b_skill_special.png" loading="lazy"> Critical</span></td>
+</tr> <tr>
+<td>119</td>
+<td><span class="status" data-id="119" title="相手から受けるダメージの上限を3000にする。スキルによる解除不可。(この状態変化はバフにカウントされない)"><img src="/cdn/Sprite/b_skill_special.png" loading="lazy"> 粘質武装</span></td>
+</tr> <tr>
+<td>120</td>
+<td><span class="status" data-id="120" title="相手からのダメージが1.5倍になる。ターン経過で解除される。"><img src="/cdn/Sprite/b_skill_special.png" loading="lazy"> 武装解除状態</span></td>
+</tr> <tr>
+<td>121</td>
+<td><span class="status" data-id="121" title="相手からのダメージを無効化する。"><img src="/cdn/Sprite/ui_button_square_02.png" loading="lazy"> system status 121</span></td>
+</tr> <tr>
+<td>122</td>
+<td><span class="status" data-id="122" title="スキル「干渉防御」によるダメージ制限を緩和する。ダメージで消費される。この状態変化は重複しない。"><img src="/cdn/Sprite/b_skill_special.png" loading="lazy"> 強制干渉</span></td>
+</tr> <tr>
+<td>123</td>
+<td><span class="status" data-id="123" title="Multiply damage received by 1.3, last for one turn, in Auto battle more likely to be targeted"><img src="/cdn/Sprite/status_target.png" loading="lazy"> Aim</span></td>
+</tr> <tr>
+<td>124</td>
+<td><span class="status" data-id="124" title="Nullify damage received once, last for one turn"><img src="/cdn/Sprite/status_invincible.png" loading="lazy"> Shield</span></td>
+</tr> <tr>
+<td>125</td>
+<td><span class="status" data-id="125" title="Attach mecha bomb to two random enemy, exploding at the end of the turn, dealing 90% max hp damage"><img src="/cdn/Sprite/status_bomb.png" loading="lazy"> Mecha Bomb</span></td>
+</tr> <tr>
+<td>126</td>
+<td><span class="status" data-id="126" title="No effect"><img src="/cdn/Sprite/ui_button_square_02.png" loading="lazy"> system status 126</span></td>
+</tr> <tr>
+<td>127</td>
+<td><span class="status" data-id="127" title=""><img src="/cdn/Sprite/ui_button_square_02.png" loading="lazy"> system status 127</span></td>
+</tr> <tr>
+<td>128</td>
+<td><span class="status" data-id="128" title=""><img src="/cdn/Sprite/ui_button_square_02.png" loading="lazy"> system status 128</span></td>
+</tr> <tr>
+<td>129</td>
+<td><span class="status" data-id="129" title=""><img src="/cdn/Sprite/ui_button_square_02.png" loading="lazy"> system status 129</span></td>
+</tr> <tr>
+<td>130</td>
+<td><span class="status" data-id="130" title=""><img src="/cdn/Sprite/ui_button_square_02.png" loading="lazy"> system status 130</span></td>
+</tr> <tr>
+<td>131</td>
+<td><span class="status" data-id="131" title=""><img src="/cdn/Sprite/ui_button_square_02.png" loading="lazy"> system status 131</span></td>
+</tr> <tr>
+<td>132</td>
+<td><span class="status" data-id="132" title=""><img src="/cdn/Sprite/ui_button_square_02.png" loading="lazy"> system status 132</span></td>
+</tr> <tr>
+<td>133</td>
+<td><span class="status" data-id="133" title=""><img src="/cdn/Sprite/ui_button_square_02.png" loading="lazy"> system status 133</span></td>
+</tr> <tr>
+<td>134</td>
+<td><span class="status" data-id="134" title=""><img src="/cdn/Sprite/ui_button_square_02.png" loading="lazy"> system status 134</span></td>
+</tr> </table> </div> </main> <footer class="content__area"> <nav class="content"> <p>Content is available under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike</a> unless otherwise noted. Live A Hero content and materials are trademarks and copyrights of LifeWonders Inc. or its licensors. All rights reserved.</p> <p>Powered by <a href="http://jekyllrb.com/">Jekyll</a></p> </nav> </footer> <script async src="/assets/main.js"></script> <script async src="/assets/analytics.js"></script> </body> </html>
