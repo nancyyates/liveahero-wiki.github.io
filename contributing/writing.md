@@ -99,7 +99,7 @@ my super duper awesome essay I just wrote
 
 Write `[Wikipedia](https://en.wikipedia.org)` to get [Wikipedia](https://en.wikipedia.org).
 
-For LAH Wiki's internal pages, please omit the domain name. For example, write `/charas/akashi/` instead of `https://liveahero-wiki.github.io/charas/akashi/`.
+For LAH Wiki's internal pages, please omit the domain name. For example, [write](https://wikipagecreator.org/) `/charas/akashi/` instead of `https://liveahero-wiki.github.io/charas/akashi/`.
 
 ### Images
 
