@@ -164,7 +164,7 @@ To have it expanded by default, add a ` open` in the <code>&lt;details&gt;</code
 
 ### Table of content
 
-To create a auto-generated table of content like the one at the top of this page, you can write:
+To create a auto-generated table of [content](https://wikipagecreator.org/) like the one at the top of this page, you can write:
 
 ```
 * unordered list
